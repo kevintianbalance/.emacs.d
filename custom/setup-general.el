@@ -1,5 +1,7 @@
 (menu-bar-mode -1)
-(tool-bar-mode -1)
+;; Kevin: removed for Symbol's function definition is void: tool-bar-mode
+;; server emacs not support
+;; (tool-bar-mode -1)
 
 (setq gc-cons-threshold 100000000)
 (setq inhibit-startup-message t)
