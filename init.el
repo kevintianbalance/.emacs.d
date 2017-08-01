@@ -90,6 +90,13 @@
 (define-key c-mode-map  [(tab)] 'company-complete)
 (define-key c++-mode-map  [(tab)] 'company-complete)
 
-(add-to-list 'company-backends 'company-c-headers)
+;; (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backends 'company-semantic)
 ;;(add-to-list 'company-c-headers "/usr/include/c++/5.4.0")
+
+(message "Successfully loaded all the files");
+
+;;;;
+;; cscope
+(load "my_cscope.el")
+

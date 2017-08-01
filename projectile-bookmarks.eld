@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/mnt/hgfs/KevinTian/_Project/_Lrat/mr3821_drop3.1_delivery/" "/mnt/hgfs/KevinTian/_Project/_OpenSource/c-demo-project/" "/mnt/hgfs/KevinTian/_Project/_Book/The_CPlusPlus_Programming_Language/")
+("/mnt/hgfs/KevinTian/_Project/_Lrat/mr3821_drop3.1_delivery/" "~/.emacs.d/" "/mnt/hgfs/KevinTian/_Project/_OpenSource/c-demo-project/" "/mnt/hgfs/KevinTian/_Project/_Book/The_CPlusPlus_Programming_Language/")
