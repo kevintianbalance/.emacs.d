@@ -94,9 +94,12 @@
 (add-to-list 'company-backends 'company-semantic)
 ;;(add-to-list 'company-c-headers "/usr/include/c++/5.4.0")
 
-(message "Successfully loaded all the files");
-
 ;;;;
-;; cscope
+;; Kevin's personal configurations
 (load "my_cscope.el")
+(load "my_bookmark.el")
+(load "my_key.el");
+(load "my_color-theme-linux.el");
+
+(message "Successfully loaded all the files");
 
