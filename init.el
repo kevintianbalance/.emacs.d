@@ -111,6 +111,9 @@
 (load "my_function.el");
 (load "my_bm.el");
 ;; (load "my_program.el");
+(load "my_color-theme-linux.el");
+(load "my_erlang-linux.el");
+
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;; EDTS: erlang IDE
 
