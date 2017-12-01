@@ -1,6 +1,3 @@
-
-
-
 (setq package-archives
       '(("org" . "http://orgmode.org/elpa/")
         ("gnu" . "http://elpa.gnu.org/packages/")

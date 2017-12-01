@@ -17,12 +17,12 @@
 (setq helm-display-function 'pop-to-buffer) ; make helm play nice
 (setq shackle-rules '(("\\`\\*helm.*?\\*\\'" :regexp t :align t :size 0.4 :inhibit-window-quit t :same nil)))
 
-;; ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; ;; ;; keyfreq - :@@@@@:
-;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/elisp/keyfreq/"))
-;; (require 'keyfreq)
-;; (keyfreq-mode 1)
-;; (keyfreq-autosave-mode 1)
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;; keyfreq - :@@@@@:
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/elisp/keyfreq/"))
+(require 'keyfreq)
+(keyfreq-mode 1)
+(keyfreq-autosave-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; color theme
