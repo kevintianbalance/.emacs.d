@@ -98,11 +98,6 @@ that was stored with ska-point-to-register."
 ;; //Kevin Tian: my-add-code
 (defun my-add-code()
   (interactive)
-;;   (insert (format-time-string "    //Kevin Tian: BEGIN, Sprint16A S1 MultiRab User Plane, %Y_%m_%d" (current-time)))
-;;  (insert (format-time-string "    //Kevin Tian: BEGIN, Step3 Start UP, eth configuration, %Y_%m_%d" (current-time)))
-<<<<<<< 40d819f7ae7a35589379b1cba7bacbe9b2577b62
-;;  (insert (format-time-string "  //MR3821 Advanced Subscriber Group Handling, BEGIN, %Y_%m_%d" (current-time)))
-;;  (insert (format-time-string "  // MR4776 SP5, ASGH based RRC state handling for VoLTE, BEGIN, %Y_%m_%d" (current-time)))
  (insert (format-time-string "  //MR5632, TDD massive mimo: DMRS based DL SU-MIMO, BEGIN, %Y_%m_%d" (current-time)))
   (insert (format-time-string "\n" (current-time)))
   (insert (format-time-string "  //MR5632 SP5, END\n" (current-time)))
@@ -111,9 +106,6 @@ that was stored with ska-point-to-register."
   ;; (insert (format-time-string "\n" (current-time)))                                                                                   ;;
   ;; (insert (format-time-string "  //MR4286, END\n" (current-time)))                                                                    ;;
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  (insert (format-time-string "  //MR3821 Q4, Advanced Subscriber Group Handling, BEGIN, %Y_%m_%d" (current-time)))
-  (insert (format-time-string "\n" (current-time)))
-  (insert (format-time-string "  //MR3821 Q4, END\n" (current-time)))
 )
 
 ;;;;;;;;;;;;;;;;;;;;
