@@ -9,6 +9,14 @@
         "/home/echetia/KevinTian/HomeEmacsDev/.emacs.d/recentf"
         "/home/echetia/KevinTian/Log/LShell_vdi2_20180724.txt"
         "/home/echetia/KevinTian/Working/MR4286/mct/telog.carrier_aggregation_3cc_volte_SUITE.fdd.tc023_scell_handling_for_voip_during_erab_setup_with_tti_bundling_off_unack_sim_mr4286_sp1_suppress_scell.rnlib_te1.1.txt"
+<<<<<<< 3d45f7d4d8d2a33f572f83fe4884e4c7c9f1ce7b
+=======
+        "/home/echetia/KevinTian/HomeEmacsDev/.emacs.d/init_erlang_v2.el"
+        "/home/echetia/KevinTian/HomeEmacsDev/.emacs.d/custom/setup-general.el"
+        "/home/echetia/KevinTian/HomeEmacsDev/.emacs.d/custom/my_erlang-linux.el"
+        "/home/echetia/KevinTian/HomeEmacsDev/.emacs.d/init.el"
+        "/home/echetia/KevinTian/Log/LShell20180418.txt"
+>>>>>>> before add repo to github
         ))
 
 (setq recentf-filter-changer-current 'nil)
