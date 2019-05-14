@@ -1,3 +1,5 @@
 *~
 semanticdb/
+*.elc
+init.elc
 *#

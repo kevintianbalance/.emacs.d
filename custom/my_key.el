@@ -23,3 +23,15 @@
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
 (global-set-key "\C-cx" 'close-all-buffers)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; F5
+(global-set-key [f5] 'highlight-symbol-at-point);
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; F6 - F8
+;; set cscope shortcut
+(global-set-key [f6] 'cscope-find-this-file)
+(global-set-key [f7] 'cscope-find-global-definition)
+(global-set-key [f8] 'cscope-find-this-symbol)

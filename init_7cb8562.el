@@ -1,7 +1,7 @@
 (require 'package)
 
-(add-to-list 'package-archives
-        '("melpa" . "http://melpa.org/packages/") t)
+;; (add-to-list 'package-archives
+;;         '("melpa" . "http://melpa.org/packages/") t)
 
 
 (package-initialize)
@@ -23,8 +23,7 @@
   (require 'setup-helm)
   (require 'setup-helm-gtags))
 ;; (require 'setup-ggtags)
-;; for performance issue, removed, 201712
-;; (require 'setup-cedet)
+(require 'setup-cedet)
 (require 'setup-editing)
 
 
@@ -86,34 +85,27 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
-;; ;; ;;;;
-;; ;; ;; clang
-;; ;; remove clang
-;; (setq company-backends (delete 'company-clang company-backends))
-;; ;; Symbol's value as variable is void: c-mode-map
-;; ;; (define-key c-mode-map  [(tab)] 'company-complete)
-;; (define-key c++-mode-map  [(tab)] 'company-complete)
+;; ;;;;
+;; ;; clang
+;; remove clang
+(setq company-backends (delete 'company-clang company-backends))
+(define-key c-mode-map  [(tab)] 'company-complete)
+(define-key c++-mode-map  [(tab)] 'company-complete)
 
-;; ;; (add-to-list 'company-backends 'company-c-headers)
-;; (add-to-list 'company-backends 'company-semantic)
-;; ;;(add-to-list 'company-c-headers "/usr/include/c++/5.4.0")
+;; (add-to-list 'company-backends 'company-c-headers)
+(add-to-list 'company-backends 'company-semantic)
+;;(add-to-list 'company-c-headers "/usr/include/c++/5.4.0")
 
 ;;;;
 ;; Kevin's personal configurations
 (load "my_cscope.el")
 (load "my_bookmark.el")
 (load "my_key.el");
-;; (load "my_color-theme-linux.el");
+(load "my_color-theme-linux.el");
 (load "my_erlang-linux.el");
-(load "my_setting.el");
-(load "my_org.el");
-(load "my_eval.el");
-(load "my_function.el");
-(load "my_bm.el");
-;; (load "my_program.el");
+
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;; EDTS: erlang IDE
-
 
 
 ;; (add-to-list 'package-archives '("elpa" . "http://elpa.gnu.org/packages/"))

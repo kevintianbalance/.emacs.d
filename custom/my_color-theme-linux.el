@@ -1,3 +1,6 @@
+;; Issue: Invalid face attribute :foreground nil
+;; not use it any more
+
 
 (set-background-color "black")
 ;; (set-background-color "dark slate gray")
