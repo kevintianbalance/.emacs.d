@@ -1,6 +1,7 @@
 Visible bookmarks in buffer for GNU Emacs 22.x / 23.x / 24.x (XEmacs 21.x).
 =====================
 
+
 This package provides visible, buffer local, bookmarks and the ability
 to jump forward and backward to the next bookmark.
 
