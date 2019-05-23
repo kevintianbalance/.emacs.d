@@ -104,7 +104,7 @@
 (load "my_bookmark.el")
 (load "my_key.el");
 ;; (load "my_color-theme-linux.el");
-(load "my_erlang-linux.el");
+;; (load "my_erlang-linux.el");
 (load "my_setting.el");
 (load "my_org.el");
 (load "my_eval.el");
