@@ -1,5 +1,3 @@
-;15.如何插入当前时间?
-;   一个例子：
 ;; (defun my-insert-date ()
 ;;   (interactive)
 ;;   (insert (format-time-string "%Y/%m/%d %H:%M:%S" (current-time))))
@@ -98,9 +96,9 @@ that was stored with ska-point-to-register."
 ;; //Kevin Tian: my-add-code
 (defun my-add-code()
   (interactive)
- (insert (format-time-string "  //MR5632, TDD massive mimo: DMRS based DL SU-MIMO, BEGIN, %Y_%m_%d" (current-time)))
+ (insert (format-time-string "  //Ferrets EMCA Prototype, BEGIN, %Y_%m_%d" (current-time)))
   (insert (format-time-string "\n" (current-time)))
-  (insert (format-time-string "  //MR5632 SP5, END\n" (current-time)))
+  (insert (format-time-string "  //END\n" (current-time)))
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; (insert (format-time-string "  // MR4286 Improved VoLTE retainability by limiting RRC signalling, BEGIN, %Y_%m_%d" (current-time))) ;;
   ;; (insert (format-time-string "\n" (current-time)))                                                                                   ;;

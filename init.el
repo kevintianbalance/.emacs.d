@@ -41,13 +41,28 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+    (afternoon-theme hamburg-theme zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+ '(safe-local-variable-values
+   (quote
+    ((hl-sexp-mode)
+     (rainbow-mode . t)
+     (eval when
+           (fboundp
+            (quote rainbow-mode))
+           (rainbow-mode 1))))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ ;; small font size
+ ;; '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :family "Inconsolata"))))
+ ;; media font size: normal:height 200
+ '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 170 :width normal :family "Inconsolata"))))
+;; bigger font size: normal:height 400
+;; '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 400 :width normal :family "Inconsolata"))))
+)
 
 ;;;;
 ;; helm + gtags

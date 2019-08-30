@@ -34,6 +34,7 @@
 ;; @@@@@@
 (setq load-path (append load-path (list "~/.emacs.d/elisp")))
 (require 'color-theme-zenburn)
+;; removed, 20190830
 (color-theme-zenburn)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -45,3 +46,9 @@
 ;; :@@@@:
 ;; (color-theme-jsc-dark)
 
+;; (setq load-path (append load-path (list "~/.emacs.d/elpa/afternoon-theme-20140104.1859")))
+;; (require 'afternoon-theme)
+;; (load-theme 'afternoon t)
+
+;; (color-theme-wheat)
+;; (color-theme-sitaramv-nt)

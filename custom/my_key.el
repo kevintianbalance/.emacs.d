@@ -13,7 +13,10 @@
 (defun my-switch-to-note-other-window ()
   "switch to my note other window"
   (interactive)
-  (switch-to-buffer-other-window ".scratch_work"))
+;;  (switch-to-buffer-other-window ".scratch_work")
+;;  (switch-to-buffer-other-window "KShell")
+  (switch-to-existing-buffer-other-window "KShell")
+)
 
 (global-set-key [f3] 'my-switch-to-note-other-window)
 
@@ -35,3 +38,20 @@
 (global-set-key [f6] 'cscope-find-this-file)
 (global-set-key [f7] 'cscope-find-global-definition)
 (global-set-key [f8] 'cscope-find-this-symbol)
+
+(defun switch-to-existing-buffer-other-window (part)
+  "Switch to buffer with PART in its name."
+  (interactive
+   (list (read-buffer-to-switch "Switch to buffer in other window: ")))
+  (let ((candidates
+         (cl-remove
+          nil
+          (mapcar (lambda (buf)
+                    (let ((pos (string-match part (buffer-name buf))))
+                      (when pos
+                        (cons pos buf))))
+                  (buffer-list)))))
+    (unless candidates
+      (user-error "There is no buffers with %S in its name." part))
+    (setq candidates (cl-sort candidates #'< :key 'car))
+        (switch-to-buffer-other-window (cdr (car candidates)))))
