@@ -24,10 +24,10 @@
 ;; (keyfreq-mode 1)
 ;; (keyfreq-autosave-mode 1)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; color theme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/sourcerer-theme-20161014.925")
-(load-theme 'sourcerer t)
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;; color theme
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/sourcerer-theme-20161014.925")
+;; (load-theme 'sourcerer t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; c++/c indent correctly for indent-region

@@ -383,9 +383,14 @@ that was stored with ska-point-to-register."
 ;; 2013_07_23
 ;; 
 (defun my-switch-to-note-other-window ()
-	"switch to my note other window"
+  "switch to my note other window"
   (interactive)
-	(switch-to-buffer-other-window ".scratch_work"))
+  ;;  (switch-to-buffer-other-window ".scratch_work")
+  ;;  (switch-to-buffer-other-window "KShell")
+  (switch-to-existing-buffer-other-window "KShell")
+  )
+
+
 
 (defun my-switch-to-note-shortcut-other-window ()
   "switch to my note other window"

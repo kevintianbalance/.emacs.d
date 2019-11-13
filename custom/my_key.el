@@ -10,14 +10,6 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; F3
-(defun my-switch-to-note-other-window ()
-  "switch to my note other window"
-  (interactive)
-;;  (switch-to-buffer-other-window ".scratch_work")
-;;  (switch-to-buffer-other-window "KShell")
-  (switch-to-existing-buffer-other-window "KShell")
-)
-
 (global-set-key [f3] 'my-switch-to-note-other-window)
 
 ;;;;

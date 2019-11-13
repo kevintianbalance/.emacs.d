@@ -126,7 +126,6 @@
 (load "my_function.el");
 (load "my_bm.el");
 ;; (load "my_program.el");
-(load "my_color-theme-linux.el");
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;; EDTS: erlang IDE
 
@@ -164,3 +163,10 @@
 
 (message "Successfully loaded all the files");
 (load "my_session.el");
+(load "my_color-theme-linux.el");
+
+;; fix server start issue
+(server-force-delete)
+(server-start)
+;; seems not take effect
+(color-theme-tango)
