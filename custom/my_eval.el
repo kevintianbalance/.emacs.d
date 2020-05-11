@@ -40,3 +40,65 @@
 ;; highlight-symbol
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 (require 'highlight-symbol)
+
+;; 2019-11-13
+(global-auto-revert-mode t)
+
+;;;;;;;;;;;;;;;;;;;;
+;; markdown mode
+(add-to-list 'load-path "~/.emacs.d/elisp/markdown-mode/");
+
+;; ;; auto install
+;; (require 'package)
+;; (add-to-list 'package-archives
+;;              '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;; (package-initialize)
+
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(autoload 'gfm-mode "markdown-mode"
+  "Major mode for editing GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; buildifier
+(defcustom buildifier-bin "buildifier"
+  "Location of the buildifier binary."
+  :type 'string
+  :group 'buildifier)
+
+(defcustom buildifier-path-regex
+  "BUILD\\|WORKSPACE\\|BAZEL"
+  "Regular expression describing base paths that need buildifier."
+  :type 'string
+  :group 'buildifier)
+
+(defun buildifier ()
+  "Run buildifier on current buffer."
+  (interactive)
+  (when (and (string-match buildifier-path-regex
+                           (file-name-nondirectory
+                            (buffer-file-name)))
+             (executable-find buildifier-bin))
+    (let ((p (point))
+          (tmp (make-temp-file "buildifier")))
+      (write-region nil nil tmp)
+      (let ((result (with-temp-buffer
+                      (cons (call-process buildifier-bin tmp t nil)
+                            (buffer-string)))))
+        (if (= (car result) 0)
+            (save-excursion
+              (erase-buffer)
+              (insert (cdr result)))
+          (warn "%s failed: %s" buildifier-bin (cdr result)))
+        (goto-char p)
+        (delete-file tmp nil)))))
+
+(add-hook 'before-save-hook 'buildifier)
+
+;; # FIX
+;; # solve windows key + v make shift always on
+;; type Win + d twice solve the problem

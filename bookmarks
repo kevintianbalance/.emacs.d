@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+((".scratch_work"
+ (filename . "/home/echetia/KevinTian/Document/.scratch_work")
+ (front-context-string . "** Kevin Notes\n*")
+ (rear-context-string)
+ (position . 1))
+("index.cpp"
+ (filename . "/repo/echetia/tn-emca/ferret/tools/poomaTg/src/poomaTgProc.c")
+ (front-context-string . "/***************")
+ (rear-context-string)
+ (position . 1))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "(require 'packag")
+ (rear-context-string)
+ (position . 1))
+)

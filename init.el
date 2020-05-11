@@ -58,10 +58,11 @@
  ;; If there is more than one, they won't work right.
  ;; small font size
  ;; '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :family "Inconsolata"))))
+
  ;; media font size: normal:height 200
- '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 170 :width normal :family "Inconsolata"))))
+;; '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height:280 :width normal :family "Inconsolata"))))
 ;; bigger font size: normal:height 400
-;; '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 400 :width normal :family "Inconsolata"))))
+ '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 220 :width normal :family "Inconsolata"))))
 )
 
 ;;;;
