@@ -33,11 +33,15 @@
 
 (define-abbrev-table 'conf-colon-mode-abbrev-table '())
 
+(define-abbrev-table 'conf-desktop-mode-abbrev-table '())
+
 (define-abbrev-table 'conf-javaprop-mode-abbrev-table '())
 
 (define-abbrev-table 'conf-ppd-mode-abbrev-table '())
 
 (define-abbrev-table 'conf-space-mode-abbrev-table '())
+
+(define-abbrev-table 'conf-toml-mode-abbrev-table '())
 
 (define-abbrev-table 'conf-unix-mode-abbrev-table '())
 
@@ -45,20 +49,25 @@
 
 (define-abbrev-table 'conf-xdefaults-mode-abbrev-table '())
 
+(define-abbrev-table 'css-mode-abbrev-table '())
+
 (define-abbrev-table 'debugger-mode-abbrev-table '())
 
 (define-abbrev-table 'diff-mode-abbrev-table '())
 
 (define-abbrev-table 'edebug-eval-mode-abbrev-table '())
 
-(define-abbrev-table 'edit-abbrevs-mode-abbrev-table
-  '(
-    ("kabook" "bookstp --stp-filename node_output --ip-filename node_ip --du dus52" nil 0)
-   ))
+(define-abbrev-table 'edit-abbrevs-mode-abbrev-table '())
 
 (define-abbrev-table 'elisp-byte-code-mode-abbrev-table '())
 
 (define-abbrev-table 'emacs-lisp-mode-abbrev-table '())
+
+(define-abbrev-table 'epa-info-mode-abbrev-table '())
+
+(define-abbrev-table 'epa-key-list-mode-abbrev-table '())
+
+(define-abbrev-table 'epa-key-mode-abbrev-table '())
 
 (define-abbrev-table 'fundamental-mode-abbrev-table
   '(
@@ -72,6 +81,8 @@
 (define-abbrev-table 'gfm-view-mode-abbrev-table '())
 
 (define-abbrev-table 'global-abbrev-table '())
+
+(define-abbrev-table 'gnus-group-mode-abbrev-table '())
 
 (define-abbrev-table 'grep-mode-abbrev-table '())
 
@@ -99,7 +110,12 @@
 
 (define-abbrev-table 'java-mode-abbrev-table
   '(
+    ("katemp" "* @JcatTcAction check server & clinet operationalState iand availabilityStatus" nil 2)
    ))
+
+(define-abbrev-table 'js-jsx-mode-abbrev-table '())
+
+(define-abbrev-table 'js-mode-abbrev-table '())
 
 (define-abbrev-table 'lisp-mode-abbrev-table '())
 
@@ -119,7 +135,11 @@
 
 (define-abbrev-table 'markdown-view-mode-abbrev-table '())
 
+(define-abbrev-table 'message-mode-abbrev-table '())
+
 (define-abbrev-table 'messages-buffer-mode-abbrev-table '())
+
+(define-abbrev-table 'mhtml-mode-abbrev-table '())
 
 (define-abbrev-table 'objc-mode-abbrev-table
   '(
@@ -150,9 +170,9 @@
     ("kavisibility" "visibility = [\"@esn//:__subpackages__\"]," nil 2)
    ))
 
-(define-abbrev-table 'python-mode-skeleton-abbrev-table
-  '(
-   ))
+(define-abbrev-table 'python-mode-skeleton-abbrev-table '())
+
+(define-abbrev-table 'scss-mode-abbrev-table '())
 
 (define-abbrev-table 'select-tags-table-mode-abbrev-table '())
 
@@ -162,30 +182,23 @@
 
 (define-abbrev-table 'shell-mode-abbrev-table
   '(
-    ("kabait" "bait --debug=gdb --gdb config_bazel_svp.bait automode=0" nil 1)
-    ("kabazel" "bbi_bazel build :targetLib --config=trinity --copt=\"-DBAIT_TEST=1\"" nil 2)
-    ("kabook" "bookstp --stp-filename node_output --ip-filename node_ip --du dus52" nil 2)
-    ("kabuild" "make build_bazel_trinity_svp  BBI_MFW__BAZEL_BUILD_PARAMS=\"--compilation_mode=dbg\"
-" nil 12)
-    ("kacd" "cd /repo/echetia/emca-smart-nic" nil 0)
-    ("kacdbbi" "cd /repo/echetia/emca-smart-nic/bbi/" nil 2)
-    ("kacddecrypt" "cd /repo/echetia/emca-smart-nic/ferret/test/mct/decrypt" nil 1)
-    ("kacdrepo" "cd /repo/echetia/emca-smart-nic" nil 0)
-    ("kacdscript" "cd /repo/echetia/emca-smart-nic/ferret/test/mct/script" nil 0)
-    ("kacdtest" "  cd /repo/echetia/emca-smart-nic/ferret/test/mct/ethToCpu/test_bait
-" nil 1)
     ("kadiff" "git difftool --extcmd=/home/echetia/KevinTian/Project/Shell/ediff.sh" nil 0)
-    ("kaexpect" "expect /repo/$USER/emca-smart-nic/bbi/legacy/lpp/tools/debugging/launch-probito.ebcom.fwd.expect 10.41.64.129" nil 2)
-    ("kamakebait" "make build_bazel_trinity_svp && make test_bazel_trinity_svp" nil 0)
-    ("kamakecscope" "/home/echetia/KevinTian/Project/Shell/kMakeCscopeFiles.sh . && gtags -f cscope.files" nil 9)
-    ("kaparse" "/home/echetia/KevinTian/Project/Shell/kMakeCscopeFiles.sh . && gtags -f cscope.files " nil 5)
-    ("kareboot" "ssh -t root@10.41.64.129 'reboot' " nil 1)
-    ("kareturn" "cat node_output|xargs returnstp --stp" nil 1)
-    ("kascp" "scp /home/echetia/KevinTian/Log/ethToCpu_MemoryProfiling.txt  echetia@10.68.83.249:/var/www/html/binary_folder/bi_tn/personal/echetia/Log/" nil 0)
-    ("kasetup" "cd /repo/echetia/emca-smart-nic/ && source gitenv.csh" nil 12)
-    ("kashowbbi" "ssh -t root@10.41.64.129 'ps axf | grep bbi'" nil 1)
+    ("kafind" "find build -mtime -1 -ls" nil 0)
+    ("kagetpods" "kubectl get pods -n echetia-sctp-server" nil 1)
+    ("kainstall" "./test/script/vrc_sctp_install.bash -u latest -a STP_ClusA_02 -c -r" nil 18)
+    ("kakbdelete" "kubectl delete ns echetia-sctp-server" nil 0)
+    ("kakbdescribe" "kubectl describe pod echetia-tfvrc-0 -n echetia-sctp-server" nil 13)
+    ("kakbexec" "kubectl exec -it echetia-tfvrc-0 -n echetia-sctp-server -c tfvrc /bin/bash " nil 14)
+    ("kakbgetnodes" "kubectl get nodes -o wide" nil 0)
+    ("kakbssh" "ssh expert@2001:1b70:8284:509e::44 -p 2023" nil 0)
+    ("kamakecscope" "/home/echetia/KevinTian/Project/Shell/kMakeCscopeFiles.sh . && gtags -f cscope.files" nil 13)
+    ("kamjetest" "cd /repo/echetia/sctp/test/target/mje/module/ && mvn test -Drm.stp=echetia-stp -Dlogdir=/home/echetia/KevinTian/Log -Pcustom.test.suite -DsuiteXmlFile=/repo/echetia/sctp/test/target/mje/module/src/main/java/vrc/sctp/test/SctpTrafficTest.xml" nil 4)
+    ("kamotransport" "ManagedElement=1,Transport=1" nil 4)
+    ("kasctpiterminate" "sctpi terminateService --clientId 101" nil 1)
+    ("kasetmje" "sed -i \"s/esignum/echetia/g\" /repo/echetia/sctp/test/target/mje/module/msran.properties" nil 3)
+    ("kasetup" "cd /repo/echetia/sctp/ && source env.bash && source env/setup.bash STP_ClusA_02" nil 39)
     ("katemp" "make GDB=y && emca-gdb  testproc.out -ex 'emca run' -ex 'br poomaTgProc.c:initialize_eth_header'" nil 2)
-    ("katest" "make  build_bazel_trinity_svp &&  make test_bazel_trinity_svp  " nil 52)
+    ("kaupdatetest" "./update_test_resources.bash -p STP_ClusA_02 -t sctp-singlecluster" nil 0)
    ))
 
 (define-abbrev-table 'snippet-mode-abbrev-table '())

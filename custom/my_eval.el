@@ -102,3 +102,8 @@
 ;; # FIX
 ;; # solve windows key + v make shift always on
 ;; type Win + d twice solve the problem
+
+;; (setq frame-title-format (list "%b")) ;;list is needed here, could someone explain ?
+;; list is needed in the last example to flatten the sub-lists, otherwise a quote is sufficient
+;; (setq frame-title-format '("" "%b @ Emacs " emacs-version))
+(setq-default frame-title-format '("E2C Emacs: %f [%m]"))

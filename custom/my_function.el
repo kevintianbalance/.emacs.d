@@ -433,3 +433,6 @@ that was stored with ska-point-to-register."
         (insert filename)
         (clipboard-kill-region (point-min) (point-max)))
       (message filename))))
+
+(fset 'kmpath
+   "\C-a/repo/echetia/sctp/\C-d\C-d")

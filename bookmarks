@@ -1,20 +1,20 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-((".scratch_work"
- (filename . "/home/echetia/KevinTian/Document/.scratch_work")
- (front-context-string . "** Kevin Notes\n*")
+(("index.java"
+ (filename . "/repo/echetia/sctp/temp/index.java")
+ (front-context-string)
  (rear-context-string)
- (position . 1))
-("index.cpp"
- (filename . "/repo/echetia/tn-emca/ferret/tools/poomaTg/src/poomaTgProc.c")
- (front-context-string . "/***************")
- (rear-context-string)
- (position . 1))
-("init.el"
- (filename . "~/.emacs.d/init.el")
- (front-context-string . "(require 'packag")
- (rear-context-string)
- (position . 1))
+ (position . 2))
+("index"
+ (filename . "/repo/echetia/sctp/blocks/sctpBaseBl/cpLU/files/conf/cp_conf.h")
+ (front-context-string . "\n    \"MSGINTERAC")
+ (rear-context-string . "               \\")
+ (position . 1186))
+("cp_conf.h"
+ (filename . "/repo/echetia/sctp/blocks/sctpBaseBl/cpLU/files/conf/cp_conf.h")
+ (front-context-string . "\n    \"MSGINTERAC")
+ (rear-context-string . "               \\")
+ (position . 1186))
 )
