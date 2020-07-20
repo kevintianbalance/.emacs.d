@@ -100,3 +100,5 @@
 (add-hook 'erlang-mode-hook 'hs-minor-mode)
 
 (setq auto-save-interval 7200)
+
+(setq max-lisp-eval-depth 10000)
